@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Casa à Venda</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f4f8;
+      color: #2c3e50;
+    }
+
+    header {
+      background: linear-gradient(135deg, #7bbdff, #1aa4ff);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+      letter-spacing: 1px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    .description {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      line-height: 1.6;
+    }
+
+    .description h2 {
+      color: #1a1a1a;
+      font-size: 1.4em;
+      margin-bottom: 15px;
+    }
+
+    .description p {
+      margin-bottom: 12px;
+    }
+
+    .photos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .photos img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .photos img:hover {
+      transform: scale(1.03);
+    }
+
+    .map {
+      margin-top: 40px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      background-color: #e3eaf2;
+      text-align: center;
+      padding: 25px;
+      margin-top: 40px;
+      color: #555;
+      font-size: 0.95em;
+    }
+
+    /* Botão WhatsApp */
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 999;
+    }
+
+    .whatsapp-button a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #25D366;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 12px 16px;
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s ease;
+    }
+
+    .whatsapp-button a:hover {
+      background-color: #1ebe5d;
+    }
+
+    .whatsapp-button img {
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Casa de 3 Quartos, Ingleses, Florianópolis-SC</h1>
+  </header>
+
+  <div class="container">
+    <div class="description">
+      <h2>Terreno de 370m², com 140m² de área construída</h2>
+      <p><strong>Endereço:</strong> Rua Maria Conceição, 471 - Ingleses</p>
+      <p><strong>Valor:</strong> R$ 950.000</p>
+      <p><strong>Documentação:</strong> Escritura de Fração Ideal</p>
+      <p>- Casa térrea com garagem, 3 quartos (sendo 1 suíte), banheiro social, sala de estar, cozinha e sala de jantar.</p>
+      <p>- Edícula com área gourmet, churrasqueira, lavabo e área de serviço.</p>
+      <p>- Amplo pátio gramado, casa murada com portão eletrônico.</p>
+      <p>- Rua calçada, local tranquilo e próximo a todas as comodidades e supermercados.</p>
+    </div>
+
+    <div class="photos">
+      <img src="FRENTE2.jpeg" alt="Fachada da casa">
+      <img src="FRENTE1.jpeg" alt="Fachada">
+      <img src="FUNDOS.jpeg" alt="Fundos da casa">
+      <img src="COZINHA.jpeg" alt="Cozinha">
+      <img src="JARDIN FRENTE.jpeg" alt="Jardim da frente">
+      <img src="SALAJANTAR.jpeg" alt="Sala de jantar">
+    </div>
+
+    <div class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3520.882352546592!2d-48.40864528493783!3d-27.431903882896394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9527370c62a6b231%3A0xd3f845f7ed5d27a5!2sR.%20Maria%20Concei%C3%A7%C3%A3o%2C%20471%20-%20Ingleses%20do%20Rio%20Vermelho%2C%20Florian%C3%B3polis%20-%20SC!5e0!3m2!1spt-BR!2sbr!4v1717700000000"
+        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+
+  <footer>
+    <p>Entre em contato para mais informações!</p>
+  </footer>
+
+  <div class="whatsapp-button">
+    <a href="https://wa.me/55489988112984" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+      Fale no WhatsApp
+    </a>
+  </div>
+
+</body>
+</html>
